@@ -1,13 +1,12 @@
 const addInput = (name, label, type) => {
-    const inputSection = document.createElement('section');
+    const inputForm = document.createElement('form');
     
-    const inputBox = document.createElement('div');
-    inputBox.innerHTML = `
+    inputForm.innerHTML = `
     <label for=${name}>${label}</label>
-    <input type=${type} id=${name} name=${name}>
+    <input type=${type} class="inputField" data-person${name} name=${name} required>
     `
-    inputSection.prepend(inputBox);
-    return inputBox
+   
+    return inputForm
 }
 export default addInput
 

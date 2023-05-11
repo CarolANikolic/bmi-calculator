@@ -12,7 +12,7 @@ const info = [
     {
         for: "height",
         label: "Height(cm)",
-        type: "float"
+        type: "number"
     }
 ];
 export default info

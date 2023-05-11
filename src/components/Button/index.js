@@ -1,9 +1,10 @@
-const generalBtn = () => {
-    const btnBox = document.createElement('div');
+const generalBtn = (reaction) => {
 
-    btnBox.innerHTML = `
-        <button type='button' id='calcBtn'>Calculate</button>
+    const body = document.createElement('body');
+
+    body.innerHTML = `
+        <button onclick="(${reaction})()">Calculate</button>
     `
-    return btnBox
+    return body
 }
 export default generalBtn
